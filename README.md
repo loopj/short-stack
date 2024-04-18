@@ -11,7 +11,8 @@
     <a href="#features">Features</a> &middot;
     <a href="#size--scale">Size & Scale</a> &middot;
     <a href="#components">Components</a> &middot;
-    <a href="#build-guide">Build Guide</a>
+    <a href="#build-guide">Build Guide</a> &middot;
+    <a href="#special-thanks">Special Thanks</a>
   </p>
 </div>
 
@@ -37,7 +38,7 @@ This is a **1:2.38 scale** model of an original Nintendo Wii console, but since 
 - **7.4% the volume** of an original Wii console
 - You could fit **13.5** of these inside an original Wii
 
-![Size comparison](images/deck-of-cards.jpg)
+<img src="images/deck-of-cards.jpg" width="48%" /> <img src="images/size-comparison.png" width="48%" />
 
 I'm pretty sure this sets the record for the smallest functional scale-model Wii console, but let me know if I'm wrong!
 
@@ -53,7 +54,7 @@ As the name implies, *Short Stack* is built from a stack of custom PCBs, and a c
 
 Making a tiny build like this is made possible by trimming the Wii motherboard down to the bare essentials. The result is a board which is just *62x62mm*, but still contains the CPU, GPU, RAM and flash memory.
 
-<img src="images/motherboard-front.jpg" width="45%" /> <img src="images/motherboard-back.jpg" width="45%" />
+<img src="images/motherboard-front.jpg" width="48%" /> <img src="images/motherboard-back.jpg" width="48%" />
 
 Since we removed the original power circuitry and trimmed off the USB, Bluetooth, and GameCube connectors, we need to provide power and data to the board another way. I designed a couple of boards which solder directly to the front of a trimmed Wii motherboard to provide power and data, which help avoid a tangled mess of wires.
 
@@ -76,6 +77,10 @@ The *main board* PCB hosts the power regulators, USB to microSD logic, HDMI conn
 The *front panel* PCB hosts the power, reset, and sync buttons, as well as the power LED and disc slot LEDs. This board connects to the main board via a short 8-pin ribbon cable.
 
 ![Front Panel Board](images/front-panel.jpg)
+
+Since the GameCube controller connectors on the original Wii wouldn't fit cleanly on a build of this size, I use TRRS headphone connectors instead. This is the exact same approach used on the amazing [GC Nano](https://bitbuilt.net/forums/index.php?threads/gc-nano-the-worlds-smallest-gamecube.5697/) and in fact I made sure the dongles are pinout compatible!
+
+![GameCube dongle](images/gamecube-dongle.jpg)
 
 ### Cooling
 
@@ -148,6 +153,18 @@ I FDM printed the case on a Voron 2.4 in ABS using a 0.4mm nozzle at 0.1mm layer
 - Secure the front of the case to the bottom of the case using two M1.2 x 4mm screws
 - Press-fit two 3 x 1mm magnets into the holes on the sd card cover, make sure they match polarity with the magnets on the front panel PCB
 - Slide the side panel into the case
+
+## Special Thanks
+
+This project would not be possible without the amazing [BitBuilt community](https://bitbuilt.net), I'm truly standing on the shoulders of giants here.
+
+In particular, I'd like to thank:
+
+- [Wesk](https://twitter.com/Weskmods) for setting the bar so high with renders, for the suggestion of using magnets in the case assembly, and for the inspirational GC Nano
+- [Aurelio](https://twitter.com/aureliomannara) for pointing me in the right direction to help figure the soft shutdown and power on via Wiimote.
+- [YveltalGriffin](https://twitter.com/YveltalGriffin) for PCB design feedback, helping me when I was documenting the bluetooth module, and of course for fujiflex and nandFlex
+- [CrazyGadget](https://twitter.com/crazygadgetmods) for helping me fix my GL823K on the first revision of my boards, and for the inspirational GC Nano
+- [Y2K](https://twitter.com/y2k_x38) and supertazon for joining the PCB assembly live stream and being super supportive
 
 ## License
 
