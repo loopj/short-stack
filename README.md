@@ -88,7 +88,7 @@ The final part of the "stack" is a custom heatsink which is designed to be as lo
 
 ![Heatsink](images/heatsink.jpg)
 
-I managed to find a tiny 5V blower fan ([Pelonis AGB208N](https://catalog.pelonistechnologies.com/item/air-g-series-micro-fans-and-micro-blowers/micro-fans-and-micro-blowers/agb208n)) which measures just 20x20x8mm and somehow puts out 0.84 CFM of air. This blows air through the heasink fins, out the side of the case.
+I managed to find a tiny 5V blower fan ([Pelonis AGB208N](https://catalog.pelonistechnologies.com/item/air-g-series-micro-fans-and-micro-blowers/micro-fans-and-micro-blowers/agb208n)) which measures just 20x20x8mm and somehow puts out 0.84 CFM of air. This blows air through the heatsink fins, out the side of the case.
 
 ### Case
 
